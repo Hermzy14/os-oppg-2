@@ -24,7 +24,8 @@ public class MovieTicketClient extends Thread {
   /**
    * This method will book tickets for the client.
    */
-  public void bookTickets() {
+  @Override
+  public void run() {
     this.movieTicketServer.bookTickets(this.clientName, this.numberOfTickets);
   }
 }
