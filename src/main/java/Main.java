@@ -3,10 +3,7 @@ import booking.MovieTicketClient;
 
 public class Main {
   public static void main(String[] args) {
-    MovieTicketServer movieTicketServer = new MovieTicketServer(
-        "Troll",
-        10
-    );
+    MovieTicketServer movieTicketServer = new MovieTicketServer("Troll", 10);
 
     // Creating 4 threads
     Thread t1 = new MovieTicketClient(movieTicketServer, "Xiangming", 3);
