@@ -26,6 +26,6 @@ public class MovieTicketClient extends Thread {
    */
   @Override
   public void run() {
-    this.movieTicketServer.bookTickets(this.clientName, this.numberOfTickets);
+    this.movieTicketServer.bookTicket(this.clientName, this.numberOfTickets);
   }
 }
