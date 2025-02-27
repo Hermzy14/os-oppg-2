@@ -3,7 +3,7 @@ package booking;
 /**
  * This class represents a client that will book tickets for a movie.
  */
-public class MovieTicketClient {
+public class MovieTicketClient extends Thread {
   private MovieTicketServer movieTicketServer;
   private String clientName;
   private int numberOfTickets;
