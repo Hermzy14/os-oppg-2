@@ -5,7 +5,7 @@ package booking;
  */
 public class MovieTicketServer {
 private String movieName;
-private int availableTickets;
+private int availableTickets; //change this to volatile for tasks
 
   /**
    * Constructor
